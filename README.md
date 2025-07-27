@@ -1,6 +1,5 @@
 # Student-Survey-application
 A microservices-based student survey application.
-
 A cloud-native, microservices-based application for managing and analyzing student survey data. Built with Spring Boot, containerized using Docker, and deployed on AWS EC2 via a Kubernetes cluster managed with Rancher. CI/CD automation implemented using Jenkins.
 
 # Features
