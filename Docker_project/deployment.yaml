@@ -1,0 +1,176 @@
+apiVersion: cluster.x-k8s.io/v1beta1
+kind: Machine
+metadata:
+  annotations:
+    objectset.rio.cattle.io/applied: >-
+      H4sIAAAAAAAA/6STT4+bMBDFv0o1Z8gGb8ABqZdWPa3aQ1r1PthD4mJsZA9JqlW+ewXapiTbTf/s0fg98xu/50foiFEjI1SPgM55RjbexXHp62+kOBIvgvELhcyWFsbfGQ0VDK5Dh1vSaYdqZxxB8qLBHxyFdLtvoYK7fZa8eTBOv/1MKhD/0eawI6hADZF9l4oyK5b5WutS1X9ljT2qyZ92aasP+5U4ajgloAJNk34xHUXGrofKDdYmYLEmO80/Oy5CBda44QgJKDtEprA4pu06jrtPH36Sdjiufiv0joO3aW/RjUoOw61r22HcQQW5lFToQuRNJnMhV5nM1LqkshY6XzdrmSm6R1EgJBBamvlf4rpSzaHS4O2M7FJJrPRNwVMT0qkgRUllg1RqgSvUqiAplVgS6lyS1HlZFyIvZaGpqIuMSnWvSWW5qgXqpaifT3PwoaVw8f9TAjfbMc+/sUScampwsDw6Y09qTLn2niMH7KfIvWvMdkPN9Bx685VCNN5BdQWzzyCB1rhx0M3Dh3fnM/6f6HQuzKervIxrAkYOg+Ih0L/BvZ8wPp6f6CvoIiMP8eLKNoT6O1QN2kjPOX/tnU4/AgAA//+moRicaQQAAA
+    objectset.rio.cattle.io/id: unmanaged-machine
+    objectset.rio.cattle.io/owner-gvk: /v1, Kind=Secret
+    objectset.rio.cattle.io/owner-name: custom-2916058dd9cb
+    objectset.rio.cattle.io/owner-namespace: c-m-kdwv42xd
+    pre-terminate.delete.hook.machine.cluster.x-k8s.io/rke-bootstrap-cleanup: rke-bootstrap-controller
+  creationTimestamp: '2024-04-16T01:58:58Z'
+  finalizers:
+    - machine.cluster.x-k8s.io
+  generation: 3
+  labels:
+    cattle.io/os: linux
+    cluster.x-k8s.io/cluster-name: master
+    cluster.x-k8s.io/control-plane: 'true'
+    objectset.rio.cattle.io/hash: 577e6d625f175274171c89e9b2d58f871ce3a26a
+    rke.cattle.io/cluster-name: master
+    rke.cattle.io/control-plane-role: 'true'
+    rke.cattle.io/etcd-role: 'true'
+    rke.cattle.io/machine-id: 69e9fae9d2a4adc6e77c20ead57e7d59b625976de6b61e9c3dec15cb2ad02ba
+    rke.cattle.io/worker-role: 'true'
+  managedFields:
+    - apiVersion: cluster.x-k8s.io/v1beta1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:objectset.rio.cattle.io/applied: {}
+            f:objectset.rio.cattle.io/id: {}
+            f:objectset.rio.cattle.io/owner-gvk: {}
+            f:objectset.rio.cattle.io/owner-name: {}
+            f:objectset.rio.cattle.io/owner-namespace: {}
+            f:pre-terminate.delete.hook.machine.cluster.x-k8s.io/rke-bootstrap-cleanup: {}
+          f:labels:
+            .: {}
+            f:cattle.io/os: {}
+            f:cluster.x-k8s.io/cluster-name: {}
+            f:cluster.x-k8s.io/control-plane: {}
+            f:objectset.rio.cattle.io/hash: {}
+            f:rke.cattle.io/cluster-name: {}
+            f:rke.cattle.io/control-plane-role: {}
+            f:rke.cattle.io/etcd-role: {}
+            f:rke.cattle.io/machine-id: {}
+            f:rke.cattle.io/worker-role: {}
+        f:spec:
+          .: {}
+          f:bootstrap:
+            .: {}
+            f:configRef: {}
+          f:clusterName: {}
+          f:infrastructureRef: {}
+      manager: rancher
+      operation: Update
+      time: '2024-04-16T01:58:58Z'
+    - apiVersion: cluster.x-k8s.io/v1beta1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:finalizers:
+            .: {}
+            v:"machine.cluster.x-k8s.io": {}
+          f:ownerReferences:
+            .: {}
+            k:{"uid":"559937a3-3184-4a03-88c0-5a9f28a1a89c"}: {}
+        f:spec:
+          f:bootstrap:
+            f:dataSecretName: {}
+          f:providerID: {}
+      manager: manager
+      operation: Update
+      time: '2024-04-16T02:02:44Z'
+    - apiVersion: cluster.x-k8s.io/v1beta1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          .: {}
+          f:addresses: {}
+          f:bootstrapReady: {}
+          f:conditions: {}
+          f:infrastructureReady: {}
+          f:lastUpdated: {}
+          f:nodeInfo:
+            .: {}
+            f:architecture: {}
+            f:bootID: {}
+            f:containerRuntimeVersion: {}
+            f:kernelVersion: {}
+            f:kubeProxyVersion: {}
+            f:kubeletVersion: {}
+            f:machineID: {}
+            f:operatingSystem: {}
+            f:osImage: {}
+            f:systemUUID: {}
+          f:nodeRef: {}
+          f:observedGeneration: {}
+          f:phase: {}
+      manager: manager
+      operation: Update
+      subresource: status
+      time: '2024-04-16T02:02:45Z'
+  name: custom-2916058dd9cb
+  namespace: fleet-default
+  ownerReferences:
+    - apiVersion: cluster.x-k8s.io/v1beta1
+      kind: Cluster
+      name: master
+      uid: 559937a3-3184-4a03-88c0-5a9f28a1a89c
+  resourceVersion: '28452'
+  uid: 4208504d-bab3-4b09-bade-65ae690113db
+spec:
+  bootstrap:
+    configRef:
+      apiVersion: rke.cattle.io/v1
+      kind: RKEBootstrap
+      name: custom-2916058dd9cb
+      namespace: fleet-default
+    dataSecretName: custom-2916058dd9cb-machine-bootstrap
+  clusterName: master
+  infrastructureRef:
+    apiVersion: rke.cattle.io/v1
+    kind: CustomMachine
+    name: custom-2916058dd9cb
+    namespace: fleet-default
+  nodeDeletionTimeout: 10s
+  providerID: rke2://ip-172-31-56-146
+status:
+  addresses:
+    - address: 172.31.56.146
+      type: InternalIP
+    - address: ip-172-31-56-146
+      type: Hostname
+  bootstrapReady: true
+  conditions:
+    - lastTransitionTime: '2024-04-16T01:58:59Z'
+      status: 'True'
+      type: Ready
+    - lastTransitionTime: '2024-04-16T01:58:59Z'
+      status: 'True'
+      type: BootstrapReady
+    - lastTransitionTime: '2024-04-16T01:58:58Z'
+      status: 'True'
+      type: InfrastructureReady
+    - lastTransitionTime: '2024-04-16T02:02:44Z'
+      status: 'True'
+      type: NodeHealthy
+    - lastTransitionTime: '2024-04-16T01:58:59Z'
+      status: 'True'
+      type: PlanApplied
+    - lastTransitionTime: '2024-04-16T02:02:22Z'
+      status: 'True'
+      type: Reconciled
+  infrastructureReady: true
+  lastUpdated: '2024-04-16T02:02:45Z'
+  nodeInfo:
+    architecture: amd64
+    bootID: 452f4744-afae-481f-9adf-fda153fb4183
+    containerRuntimeVersion: containerd://1.7.11-k3s2
+    kernelVersion: 6.5.0-1014-aws
+    kubeProxyVersion: v1.27.12+rke2r1
+    kubeletVersion: v1.27.12+rke2r1
+    machineID: ce7d191b37d6483191e06d36c44c832e
+    operatingSystem: linux
+    osImage: Ubuntu 22.04.4 LTS
+    systemUUID: ec2e22a2-be27-2551-cb34-8cb7769f5f6c
+  nodeRef:
+    apiVersion: v1
+    kind: Node
+    name: ip-172-31-56-146
+    uid: 06a182ec-2c72-4da8-9202-4a48135a0324
+  observedGeneration: 3
+  phase: Running

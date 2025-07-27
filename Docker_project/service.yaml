@@ -1,0 +1,18 @@
+# Aditya Ketanbhai Shah – G01449892
+# Suhas Thandaga Ramesh – G01450932
+# Niharika FNU LNU – G01412073
+# Syedfurkhan Feroz Hashmi – G01411748
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: user-form-service
+spec:
+  selector:
+    app: user-form
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30000
+  type: NodePort
