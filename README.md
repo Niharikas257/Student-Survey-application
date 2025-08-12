@@ -1,3 +1,13 @@
+<!-- Technology Stack Badges -->
+![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=springboot&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
+![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?logo=amazon-aws&logoColor=white)
+![AWS Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?logo=awslambda&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white)
+![Microservices](https://img.shields.io/badge/Microservices-Architecture-blueviolet)
+
 # Student-Survey-application
 A microservices-based student survey application.
 A cloud-native, microservices-based application for managing and analyzing student survey data. Built with Spring Boot, containerized using Docker, and deployed on AWS EC2 via a Kubernetes cluster managed with Rancher. CI/CD automation implemented using Jenkins.
